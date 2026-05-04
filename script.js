@@ -40,6 +40,19 @@
             'sin-camara': 'Sin cámara de aire'
         };
 
+        async function requestLandscape() {
+            try {
+                if (document.documentElement.requestFullscreen) {
+                    await document.documentElement.requestFullscreen();
+                }
+                if (screen.orientation && screen.orientation.lock) {
+                    await screen.orientation.lock('landscape');
+                }
+            } catch (err) {
+                console.log("No se pudo bloquear la orientación:", err);
+            }
+        }
+
         function renderActivity() {
             const grid = document.getElementById('egg-grid');
             const descList = document.getElementById('descriptions-list');

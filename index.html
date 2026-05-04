@@ -9,6 +9,16 @@
 </head>
 <body class="min-h-screen flex flex-col md:flex-row">
 
+    <div id="orientation-overlay">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-blue-400 mb-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 002-2H5a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center rotate-90" />
+        </svg>
+        <h2 class="text-xl font-bold text-white mb-2">Por favor, rota tu dispositivo</h2>
+        <p class="text-slate-400">Esta actividad está diseñada para verse en modo horizontal.</p>
+        <button onclick="requestLandscape()" class="mt-6 px-6 py-2 bg-blue-600 rounded-full text-sm font-bold">Intentar Pantalla Completa</button>
+    </div>
+
     <aside class="sidebar w-full md:w-64 p-6 md:sticky md:top-0 md:h-screen border-r border-slate-700 flex-shrink-0 overflow-y-auto">
         <div class="mb-8">
             <h1 class="text-xl font-bold text-blue-400">Repaso Huevos Helmintos</h1>
