@@ -12,8 +12,6 @@
     <div id="orientation-overlay">
         <div class="relative w-16 h-16 mb-4 animate-bounce overflow-hidden rounded-md">
         
-        <!-- 1. El Teléfono RECTANGULAR y LIMPIO (Usamos un div como máscara de fondo) -->
-        <!-- Este div crea la forma rectangular perfecta y el color azul -->
         <div class="absolute inset-0 bg-blue-400 opacity-20"></div>
         
         <!-- 2. La Flecha de Rotación (Icono externo, limpio y proporcional) -->
@@ -29,7 +27,7 @@
 
     <aside class="sidebar w-full md:w-64 p-6 md:sticky md:top-0 md:h-screen border-r border-slate-700 flex-shrink-0 overflow-y-auto">
         <div class="mb-8">
-            <h1 class="text-xl font-bold text-blue-400">Repaso Huevos Helmintos</h1>
+            <h1 class="text-xl font-bold text-violet-400">Repaso Huevos Helmintos</h1>
             <p class="text-xs text-slate-400">Clasificación morfológica</p>
         </div>
 
@@ -47,6 +45,7 @@
                     <button onclick="toggleFilter('segmentado')" id="filter-segmentado" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">Segmentados</button>
                     <button onclick="toggleFilter('no-segmentado')" id="filter-no-segmentado" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">No segmentados</button>
                     <button onclick="toggleFilter('larvado')" id="filter-larvado" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">Larvados</button>
+                    <button onclick="toggleFilter('embrionado')" id="filter-embrionado" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">Embrionados</button>
                 </nav>
             </section>
 
@@ -55,8 +54,23 @@
                 <nav class="space-y-1">
                     <button onclick="toggleFilter('tapones')" id="filter-tapones" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">Con tapones polares</button>
                     <button onclick="toggleFilter('operculo')" id="filter-operculo" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">Con opérculo</button>
+                </nav>
+            </section>
+            <section>
+                <p class="text-[10px] uppercase font-bold text-slate-500 mb-2 px-3 tracking-widest">Cámara de aire</p>
+                <nav class="space-y-1">
                     <button onclick="toggleFilter('con-camara')" id="filter-con-camara" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">Con cámara de aire</button>
                     <button onclick="toggleFilter('sin-camara')" id="filter-sin-camara" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">Sin cámara de aire</button>
+                </nav>
+            </section>
+            <section>
+                <p class="text-[10px] uppercase font-bold text-slate-500 mb-2 px-3 tracking-widest">Materia fecal</p>
+                <nav class="space-y-1">
+                    <button onclick="toggleFilter('caninos')" id="filter-caninos" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">MF canino</button>
+                    <button onclick="toggleFilter('felinos')" id="filter-felinos" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">MF felino</button>
+                    <button onclick="toggleFilter('rumiantes')" id="filter-rumiantes" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">MF rumiantes</button>
+                    <button onclick="toggleFilter('equinos')" id="filter-equinos" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">MF equino</button>
+                    <button onclick="toggleFilter('porcinos')" id="filter-porcinos" class="btn-filter w-full text-left px-3 py-2 rounded-lg hover:bg-slate-700 text-sm font-medium border border-transparent">MF porcino</button>
                 </nav>
             </section>
         </div>
@@ -73,10 +87,9 @@
     <main class="flex-1 p-6 md:p-8 bg-slate-900">
         <header class="mb-6 flex justify-between items-end">
             <div>
-                <h2 id="category-title" class="text-2xl font-semibold text-white">Ejemplares</h2>
-                <p class="text-sm text-slate-500 italic">Arrastra la descripción al huevo que corresponda</p>
+                <h2 id="category-title" class="text-2xl font-semibold text-violet-400">Ejemplares</h2>
             </div>
-            <div id="score" class="text-blue-400 font-mono text-lg">Aciertos: 0/0</div>
+            <div id="score" class="text-violet-400 font-mono text-lg">Aciertos: 0/0</div>
         </header>
 
         <div id="egg-grid" class="grid-container"></div>
@@ -84,6 +97,8 @@
 
     <aside class="sidebar w-full md:w-80 p-6 md:sticky md:top-0 md:h-screen border-l border-slate-700 overflow-y-auto">
         <h3 class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-4">Descripciones</h3>
+        <p class="text-sm text-red-500 italic mb-2">Arrastra la descripción al huevo que corresponda</p>
+
         <div id="descriptions-list" class="space-y-3"></div>
     </aside>
 

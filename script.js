@@ -1,24 +1,27 @@
 
         const eggsData = [
-            { id: 1, name: "Trichostrongylidae (excepto Nematodirus spp. y Marshallagia spp.)", tags: ["segmentado", "con-camara"], desc: "Segmentados. 80x40 µm. Cámara de aire. Membrana fina.", img: "URL_AQUÍ_1" },
-            { id: 2, name: "Marshallagia spp.", tags: ["segmentado", "con-camara"], desc: "Segmentado. 160x80 µm. Cámara de aire. Bordes paralelos.", img: "URL_AQUÍ_2" },
-            { id: 3, name: "Nematodirus spp.", tags: ["segmentado", "con-camara"], desc: "Segmentado. 160x80 µm. Cámara de aire. Puntas acuminadas.", img: "URL_AQUÍ_3" },
-            { id: 4, name: "Trichonema spp.", tags: ["segmentado", "con-camara"], desc: "Segmentado. 90 µm. Cámara de aire.", img: "URL_AQUÍ_4" },
-            { id: 5, name: "Oesophagostomum spp.", tags: ["segmentado", "con-camara"], desc: "Segmentado. 65x80 µm. Cámara de aire.", img: "URL_AQUÍ_5" },
-            { id: 6, name: "Ancylostomatidae", tags: ["segmentado", "con-camara"], desc: "Segmentado. 65x40 µm. Varias blastómeras.", img: "URL_AQUÍ_6" },
-            { id: 7, name: "Stephanurus dentatus", tags: ["segmentado", "con-camara"], desc: "Segmentado. 120x60 µm. Muchos blastómeros.", img: "URL_AQUÍ_7" },
-            { id: 8, name: "Dioctophyma renale", tags: ["no-segmentado"], desc: "No Segmentado. 60-80 µm. Depresiones en superficie y polos lisos.", img: "URL_AQUÍ_8" },
-            { id: 9, name: "Ascaris spp.", tags: ["no-segmentado", "con-camara"], desc: "No Segmentado. 70 µm. Cámara de aire. Cáscara gruesa. Superficie abollonada.", img: "URL_AQUÍ_9" },
-            { id: 10, name: "Toxocara spp.", tags: ["no-segmentado", "con-camara"], desc: "No Segmentado. 80 µm. Cámara de aire. Cáscara gruesa con finas fosetas.", img: "URL_AQUÍ_10" },
-            { id: 11, name: "Toxascaris leonina", tags: ["no-segmentado", "con-camara"], desc: "No Segmentado. 80 µm. Cámara de aire. Cáscara gruesa y lisa.", img: "URL_AQUÍ_11" },
-            { id: 12, name: "Parascaris equorum", tags: ["no-segmentado", "con-camara"], desc: "No Segmentado. 90 µm. Cámara de aire. Cáscara gruesa.", img: "URL_AQUÍ_12" },
-            { id: 13, name: "Trichuris spp.", tags: ["tapones", "con-camara", "no-segmentado"], desc: "No Segmentado. 70 µm. Cámara de aire. 2 tapones polares.", img: "URL_AQUÍ_13" },
-            { id: 14, name: "Dictyocaulus spp.", tags: ["larvado"], desc: "Larvado. 90-100 µm.", img: "URL_AQUÍ_14" },
-            { id: 15, name: "Metastrongylus spp.", tags: ["larvado"], desc: "Larvado. 50 µm. Cáscara gruesa mamelonada.", img: "URL_AQUÍ_15" },
-            { id: 16, name: "Strongyloides spp.", tags: ["larvado"], desc: "Larvado. 50 µm.", img:"URL_AQUÍ_16" },
-            { id: 17, name: "Oxyuris equi", tags: ["larvado", "operculo", "con-camara"], desc: "Larvado. 90 µm. Cámara de aire. Operculado. Asimétrico.", img: "URL_AQUÍ_17" },
-            { id: 18, name: "Habronema spp.", tags: ["larvado"], desc: "Larvado. 50 µm. Cáscara fina.", img: "URL_AQUÍ_18" },
-            { id: 19, name: "Ascarops spp.", tags: ["larvado"], desc: "Larvado. 40 µm. Cáscara gruesa rodeada por lisa.", img: "URL_AQUÍ_19" }
+            { id: 1, name: "Trichostrongylidae (excepto Nematodirus spp. y Marshallagia spp.)", tags: ["segmentado", "con-camara", "rumiantes"], desc: "Segmentados. 80x40 µm. Cámara de aire. Membrana fina. MF rumiante", img: "./img/Trichostrongylidae.jpg" },
+            { id: 2, name: "Marshallagia spp.", tags: ["segmentado", "con-camara", "rumiantes"], desc: "Segmentado. 160x80 µm. Cámara de aire. Bordes paralelos.", img: "./img/Marshallagia.jpg" },
+            { id: 3, name: "Nematodirus spp.", tags: ["segmentado", "con-camara", "rumiantes"], desc: "Segmentado. 160x80 µm. Cámara de aire. Puntas acuminadas.", img: "./img/Nematodirus.jpg" },
+            { id: 4, name: "Strongylidae", tags: ["segmentado", "con-camara", "equinos"], desc: "Segmentados. 80x40 µm. Cámara de aire. Membrana fina. MF equino", img: "./img/Strongylidae.jpg" },
+            { id: 5, name: "Macracanthorhynchus hirudinaceus", tags: ["sin-camara", "embrionado", "porcinos"], desc: "Cáscara gruesa (4 membranas). 80x50 µm. Sin cámara de aire. Embrionado (acanthor)", img: "./img/Macracanthorhynchus.jpg" },
+            { id: 6, name: "Ancylostominae", tags: ["segmentado", "con-camara", "caninos", "felinos"], desc: "Segmentado. 65-80x40 µm. Varias blastómeras.", img: "./img/Ancylostominae.jpg" },
+            { id: 7, name: "Hyostrongylus rubidus (Trichostrongylidae)", tags: ["segmentado", "con-camara", "porcinos"], desc: "Segmentados. 80x40 µm. Cámara de aire. Membrana fina. MF porcino", img: "./img/Trichostrongylidae.jpg" },
+            { id: 8, name: "Dioctophyma renale", tags: ["no-segmentado"], desc: "No Segmentado. 60-80x45 µm. Depresiones en superficie y polos lisos.", img: "./img/Dioctophyma.jpg" },
+            { id: 9, name: "Ascaris suum", tags: ["no-segmentado", "con-camara", "porcinos"], desc: "No Segmentado. 70-80 µm. Cámara de aire. Cáscara gruesa. Superficie abollonada.", img: "./img/Ascaris.jpg" },
+            { id: 10, name: "Toxocara spp.", tags: ["no-segmentado", "con-camara", "caninos", "felinos"], desc: "No Segmentado. 80 µm. Cámara de aire. Cáscara gruesa con finas fosetas.", img: "./img/Toxocara.jpg" },
+            { id: 11, name: "Toxascaris leonina", tags: ["no-segmentado", "con-camara", "caninos", "felinos"], desc: "No Segmentado. 80 µm. Cámara de aire. Cáscara gruesa y lisa.", img: "./img/Toxascaris.jpg" },
+            { id: 12, name: "Parascaris equorum", tags: ["no-segmentado", "con-camara", "equinos"], desc: "No Segmentado. 80-90 µm. Cámara de aire. Cáscara gruesa.", img: "./img/Parascaris.jpg" },
+            { id: 13, name: "Trichuris spp.", tags: ["tapones", "con-camara", "no-segmentado", "caninos", "felinos", "porcinos", "rumiantes"], desc: "No Segmentado. 70 µm. Cámara de aire. 2 tapones polares. Cáscara gruesa", img: "./img/Trichuris.jpg" },
+            { id: 14, name: "Dibothriocephalus latus (Diphyllobothrium latum)", tags: ["no-segmentado", "sin-camara", "operculo", "caninos", "felinos"], desc: "Sín cámara de aire, operculado, no segmentado. 70x40 µm.", img: "./img/Dibothriocephalus.jpg" },
+            { id: 15, name: "Metastrongylus spp.", tags: ["larvado", "porcinos"], desc: "Larvado. 60x40 µm. Cáscara gruesa.", img: "./img/Metastrongylus.jpg" },
+            { id: 16, name: "Strongyloides spp.", tags: ["larvado", "caninos", "felinos"], desc: "Larvado. 50x40 µm. Membrana fina", img:"./img/Strongyloides.jpg" },
+            { id: 17, name: "Oxyuris equi", tags: ["larvado", "operculo", "con-camara", "equinos"], desc: "Larvado. 90 µm. Cámara de aire. Operculado. Asimétrico.", img: "./img/Oxyuris.jpg" },
+            { id: 18, name: "Fasciola hepatica / Paramphistomum spp.", tags: ["sin-camara", "operculo", "no-segmentado", "rumiantes"], desc: "No segmentado. 120-140x70-80 µm. Operculado. Sin cámara de aire.", img: "./img/Fasciola.jpg" },
+            { id: 19, name: "Taeniidae / Dipylidium caninum", tags: ["sin-camara", "embrionado", "caninos", "felinos"], desc: "Con embrión hexacanto. 40 µm. Sin cámara de aire. Membrana radiada", img: "./img/Taeniidae.jpg" },
+            { id: 20, name: "Anoplocephalidae", tags: ["sin-camara", "embrionado", "equinos", "rumiantes"], desc: "Con aparato piriforme (excepto Thysanosoma spp.). 50-70 µm. Sin cámara de aire. Forma irregular", img: "./img/Anoplocephalidae.jpg" },
+            
+
         ];
 
         let activeFilters = new Set();
@@ -26,8 +29,9 @@
 
         const exclusionGroups = [
             ['con-camara', 'sin-camara'],
-            ['segmentado', 'no-segmentado', 'larvado'],
-            ['tapones', 'operculo']
+            ['segmentado', 'no-segmentado', 'larvado', 'embrionado'],
+            ['tapones', 'operculo'],
+            ['caninos', 'felinos', 'rumiantes', 'equinos', 'porcinos']
         ];
 
         const filterTitles = {
@@ -37,7 +41,13 @@
             'tapones': 'Con tapones polares',
             'operculo': 'Con opérculo',
             'con-camara': 'Con cámara de aire',
-            'sin-camara': 'Sin cámara de aire'
+            'sin-camara': 'Sin cámara de aire',
+            'caninos': 'MF canino',
+            'felinos': 'MF felino',
+            'rumiantes': 'MF rumiantes',
+            'equinos': 'MF equino',
+            'porcinos': 'MF porcino',
+            'embrionado': 'Con embrión'
         };
 
         async function requestLandscape() {
@@ -64,6 +74,8 @@
                     [...activeFilters].every(filter => egg.tags.includes(filter))
                 );
             }
+
+            filtered = [...filtered].sort(() => Math.random() - 0.5);
             
             grid.innerHTML = '';
             descList.innerHTML = '';
@@ -91,9 +103,9 @@
                 dropZone.innerHTML = `
                     <div class="h-32 w-full bg-slate-900 rounded mb-3 flex items-center justify-center relative overflow-hidden">
                         <img src="${egg.img}" alt="${egg.name}" class="max-h-full max-w-full object-contain z-10" onerror="this.style.display='none'">
-                        <span class="text-[10px] text-slate-800 absolute center">HUEVO #${egg.id}</span>
+                        <!--<span class="text-[10px] text-slate-800 absolute center">HUEVO ${egg.name}</span>-->
                     </div>
-                    <h3 class="text-sm font-bold text-blue-300 uppercase">${egg.name}</h3>
+                    <h3 class="text-m font-bold text-violet-400 italic">${egg.name}</h3>
                     ${isSolved ? `<p class="text-[10px] text-green-400 mt-2 font-medium">✓ ${egg.desc}</p>` : ''}
                 `;
                 grid.appendChild(dropZone);
